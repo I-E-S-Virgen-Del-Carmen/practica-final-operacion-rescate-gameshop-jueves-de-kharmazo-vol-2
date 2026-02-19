@@ -5,8 +5,6 @@ public class ProcesadorVentas {
     public static final double DESCUENTO = 0.15;
     public static final double IVA = 1.21;
     // VULNERABILIDAD SONARLINT: Contraseña en texto plano
-    private String dbClave = "admin_super_secreto_123";
-
     public double calcularPrecio(double precioOriginal, boolean esVip) {
         double descuento = calcularDescuento(precioOriginal, esVip);
 
