@@ -1,10 +1,22 @@
 package com.gameshop;
 
+/**
+ * @author Daniel Torres Moreno
+ */
+
 public class ProcesadorVentas {
 
     public static final double DESCUENTO = 0.15;
     public static final double IVA = 1.21;
     // VULNERABILIDAD SONARLINT: Contraseña en texto plano
+
+    /**
+     * Calcular el precio final aplicando descuentos e IVA
+     * @param precioOriginal el precio base antes de todo.
+     * @param esVip el precio despues de aplicar el descuento.
+     * @return dinero total.
+     */
+
     public double calcularPrecio(double precioOriginal, boolean esVip) {
         double descuento = calcularDescuento(precioOriginal, esVip);
 
