@@ -60,7 +60,7 @@
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771538670779</updated>
-      <workItem from="1771538671239" duration="1095000" />
+      <workItem from="1771538671239" duration="3930000" />
+      <workItem from="1771542619393" duration="1003000" />
     </task>
     <servers />
   </component>
@@ -92,5 +93,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

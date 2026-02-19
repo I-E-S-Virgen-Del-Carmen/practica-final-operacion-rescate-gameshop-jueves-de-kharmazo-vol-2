@@ -1,20 +1,24 @@
 package com.gameshop;
 
+import java.util.logging.Logger;
+
 public class GestorInventario {
 
     public static final int LIMITE_STOCK = 5;
+
+    private static final Logger logger = Logger.getLogger(GestorInventario.class.getName());
 
     public void verInventario(String[] nombreJuegos, int[] copiasDisponibles) {
         int totalJuegos = 0;
 
         for (int i = 0; i < nombreJuegos.length; i++) {
-            System.out.println("Revisando stock de: " + nombreJuegos[i]);
+            logger.log(java.util.logging.Level.INFO, "Revisando stock de: {0}", nombreJuegos);
 
             obtenerStock(nombreJuegos, copiasDisponibles, i);
 
             totalJuegos = getTotalJuegos(totalJuegos, copiasDisponibles[i]);
         }
-        System.out.println("Total de juegos en el almacén: " + totalJuegos);
+        logger.log(java.util.logging.Level.INFO, "Total de juegos en el almacén: {0}", totalJuegos);
     }
 
     /**
@@ -38,7 +42,7 @@ public class GestorInventario {
      */
     private static void obtenerStock(String[] nombreJuegos, int[] copiasDisponibles, int i) {
         if (copiasDisponibles[i] <= LIMITE_STOCK) {
-            System.out.println("¡ALERTA! Pedir más copias de " + nombreJuegos[i]);
+            logger.log(java.util.logging.Level.WARNING, "¡ALERTA! Pedir más copias de {0}", nombreJuegos);
         }
     }
 }
