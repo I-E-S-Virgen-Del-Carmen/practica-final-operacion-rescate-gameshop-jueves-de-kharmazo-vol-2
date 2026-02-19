@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1adb60-f0d1-47a7-80ce-d2d9417b6234" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/GestorInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/GestorInventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,25 +17,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Adrian190907"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Adrian190907&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:I-E-S-Virgen-Del-Carmen/practica-final-operacion-rescate-gameshop-jueves-de-kharmazo-vol-2.git",
-    "accountId": "de56b38a-7ac5-49d2-a697-9c28e11fb4d1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:I-E-S-Virgen-Del-Carmen/practica-final-operacion-rescate-gameshop-jueves-de-kharmazo-vol-2.git&quot;,
+    &quot;accountId&quot;: &quot;de56b38a-7ac5-49d2-a697-9c28e11fb4d1&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="39uGiPbvkRYlWooQCPt2v35IL2I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +49,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "fix/Inventario-Adrian",
+    "git-widget-placeholder": "Rebasing fix/Inventario-Adrian",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",

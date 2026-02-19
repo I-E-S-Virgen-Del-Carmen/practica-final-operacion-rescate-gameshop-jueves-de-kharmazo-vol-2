@@ -2,19 +2,28 @@ package com.gameshop;
 
 public class GestorInventario {
 
-    public void p(String[] n, int[] c) {
-        int t = 0;
+    public static final int LIMITE_STOCK = 5;
 
-        for (int i = 0; i < n.length; i++) {
-            System.out.println("Revisando stock de: " + n[i]);
+    public void verInventario(String[] nombreJuegos, int[] copiasDisponibles) {
+        int totalJuegos = 0;
 
-            // CODE SMELL: Magic Number (5)
-            if (c[i] <= 5) {
-                System.out.println("¡ALERTA! Pedir más copias de " + n[i]);
-            }
+        for (int i = 0; i < nombreJuegos.length; i++) {
+            System.out.println("Revisando stock de: " + nombreJuegos[i]);
 
-            t = t + c[i];
+            obtenerStock(nombreJuegos, copiasDisponibles, i);
+
+            totalJuegos = getTotalJuegos(totalJuegos, copiasDisponibles[i]);
         }
-        System.out.println("Total de juegos en el almacén: " + t);
+        System.out.println("Total de juegos en el almacén: " + totalJuegos);
+    }
+
+    private static int getTotalJuegos(int totalJuegos, int copiasDisponibles) {
+        return totalJuegos + copiasDisponibles;
+    }
+
+    private static void obtenerStock(String[] nombreJuegos, int[] copiasDisponibles, int i) {
+        if (copiasDisponibles[i] <= LIMITE_STOCK) {
+            System.out.println("¡ALERTA! Pedir más copias de " + nombreJuegos[i]);
+        }
     }
 }
