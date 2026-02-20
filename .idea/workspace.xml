@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1adb60-f0d1-47a7-80ce-d2d9417b6234" name="Changes" comment="">
+    <list default="true" id="30d9d3f0-babf-4559-932e-295a6200c02b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/GestorInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/GestorInventario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/ProcesadorVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/ProcesadorVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gameshop/SistemaRecompensasVip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gameshop/SistemaRecompensasVip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,39 +19,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Adrian190907&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:I-E-S-Virgen-Del-Carmen/practica-final-operacion-rescate-gameshop-jueves-de-kharmazo-vol-2.git&quot;,
-    &quot;accountId&quot;: &quot;de56b38a-7ac5-49d2-a697-9c28e11fb4d1&quot;
-  }
-}</component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="39uGiPbvkRYlWooQCPt2v35IL2I" />
+  <component name="ProjectId" id="39vx71Hn1KTmEgoFCPpW1oGexXl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Rebasing fix/Inventario-Adrian",
+    "git-widget-placeholder": "arreglar-bugs-sistema",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -57,10 +42,21 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,13 +67,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d1adb60-f0d1-47a7-80ce-d2d9417b6234" name="Changes" comment="" />
-      <created>1771538670779</created>
+      <changelist id="30d9d3f0-babf-4559-932e-295a6200c02b" name="Changes" comment="" />
+      <created>1771590174463</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1771538670779</updated>
-      <workItem from="1771538671239" duration="3930000" />
-      <workItem from="1771542619393" duration="1003000" />
+      <updated>1771590174463</updated>
+      <workItem from="1771590175710" duration="470000" />
+      <workItem from="1771590657314" duration="1906000" />
     </task>
     <servers />
   </component>
@@ -87,15 +83,12 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gameshop/SistemaRecompensasVip.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
