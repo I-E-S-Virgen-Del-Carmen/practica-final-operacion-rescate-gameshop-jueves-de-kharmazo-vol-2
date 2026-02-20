@@ -1,36 +1,50 @@
 package com.gameshop;
 
-public class SistemaRecompensasVip {
+/**
+ * Sistema de recompensas para clientes VIP.
+ *
+ * @author [Pablo]
+ */
+class SistemaRecompensasVIP {
+    private static final String PREMIUM = "Premium";
+    private static final String ESTRELLA = "*";
+    private static final String CLIENTE_LEYENDA = "¡CLIENTE LEYENDA!";
+    private static final String CLIENTE_ORO = "¡CLIENTE ORO!";
+    private static final int PUNTOS_LEYENDA = 500;
+    private static final int PUNTOS_ORO = 100;
 
+    /**
+     * Comprueba si el cliente es VIP Premium.
+     *
+     * @param tipoCliente el tipo de cliente
+     * @return true si es Premium, false en caso contrario
+     */
     public boolean comprobarVip(String tipoCliente) {
-        // BUG (NPE): Si 'tipoCliente' es null (como pasa en el Main), intentar hacer .equals() lanza un NullPointerException.
-        // SOLUCIÓN SONARLINT: Escribir "Premium".equals(tipoCliente)
-        if (tipoCliente.equals("Premium")) {
-            return true;
-        } else {
+        if (tipoCliente == null) {
             return false;
         }
+        return PREMIUM.equals(tipoCliente);
     }
 
+    /**
+     * Genera un reporte con estrellas según los puntos.
+     *
+     * @param puntos los puntos del cliente
+     * @return el reporte generado
+     */
     public String generarReporte(int puntos) {
-        String r = "";
+        StringBuilder reporte = new StringBuilder();
 
-        // CODE SMELL CRÍTICO: Concatenación de Strings en un bucle con '+' (usar StringBuilder)
         for (int i = 0; i < puntos; i++) {
-            r = r + "*";
+            reporte.append(ESTRELLA);
         }
 
-        // CODE SMELL: Complejidad Cognitiva alta (Escalera de Ifs)
-        if (puntos > 0) {
-            if (puntos >= 100) {
-                if (puntos >= 500) {
-                    r = r + " ¡CLIENTE LEYENDA!";
-                } else {
-                    r = r + " ¡CLIENTE ORO!";
-                }
-            }
+        if (puntos >= PUNTOS_LEYENDA) {
+            reporte.append(CLIENTE_LEYENDA);
+        } else if (puntos >= PUNTOS_ORO) {
+            reporte.append(CLIENTE_ORO);
         }
 
-        return r;
+        return reporte.toString();
     }
 }
