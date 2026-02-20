@@ -1,48 +1,21 @@
 package com.gameshop;
 
-import java.util.logging.Logger;
-
 public class GestorInventario {
 
-    public static final int LIMITE_STOCK = 5;
+    public void p(String[] n, int[] c) {
+        int t = 0;
 
-    private static final Logger logger = Logger.getLogger(GestorInventario.class.getName());
+        // BUG LÓGICO: El '- 1' hace que el último elemento (Halo) se ignore por completo.
+        for (int i = 0; i < n.length - 1; i++) {
+            System.out.println("Revisando stock de: " + n[i]);
 
-    public void verInventario(String[] nombreJuegos, int[] copiasDisponibles) {
-        int totalJuegos = 0;
+            // CODE SMELL: Magic Number (5)
+            if (c[i] <= 5) {
+                System.out.println("¡ALERTA! Pedir más copias de " + n[i]);
+            }
 
-        for (int i = 0; i < nombreJuegos.length; i++) {
-            logger.log(java.util.logging.Level.INFO, "Revisando stock de: {0}", nombreJuegos);
-
-            obtenerStock(nombreJuegos, copiasDisponibles, i);
-
-            totalJuegos = getTotalJuegos(totalJuegos, copiasDisponibles[i]);
+            t = t + c[i];
         }
-        logger.log(java.util.logging.Level.INFO, "Total de juegos en el almacén: {0}", totalJuegos);
-    }
-
-    /**
-     * Calcula el total de juegos
-     *
-     * @param totalJuegos Total de juegos actuales
-     * @param copiasDisponibles Numero de copias actuales
-     * @return El nuevo total de juegos sumando las copias
-     */
-
-    private static int getTotalJuegos(int totalJuegos, int copiasDisponibles) {
-        return totalJuegos + copiasDisponibles;
-    }
-
-    /**
-     * Verifica el stock de un juego y manda una alerta si el stock es menor de 5.
-     *
-     * @param nombreJuegos Array con los nombres de los juegos
-     * @param copiasDisponibles Array con todas las copias de cada juego
-     * @param i posicion del juego que hemos pedido analizar
-     */
-    private static void obtenerStock(String[] nombreJuegos, int[] copiasDisponibles, int i) {
-        if (copiasDisponibles[i] <= LIMITE_STOCK) {
-            logger.log(java.util.logging.Level.WARNING, "¡ALERTA! Pedir más copias de {0}", nombreJuegos);
-        }
+        System.out.println("Total de juegos en el almacén: " + t);
     }
 }
